@@ -5,13 +5,25 @@
  *
  * Return: Always 0 (Success)
  */
-
-int main()
+int main(void)
 {
-	for (int x = 'A'; x <= 'Z'; x++)
+	char f, F;
+	f = 'a';
+	while (f <= 'z')
+
 	{
-		x = tolower(x);
-		putchar(x);
+		putchar(f);
+		f = f + 1;
 	}
-	return 0;
-}
+	putchar(f);
+	f = f + 1;
+	{
+		F = 'A';
+		while (F <= 'Z')
+		{
+			putchar(F);
+			F = F + 1;
+		}
+		putchar('\n');
+		return (0);
+	}
