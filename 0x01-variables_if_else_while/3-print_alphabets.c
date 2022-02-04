@@ -11,7 +11,7 @@ int main(void)
 	char f, F;
 	f = 'a';
 	while (f <= 'z')
-		;
+
 	{
 		putchar(f);
 		f = f + 1;
