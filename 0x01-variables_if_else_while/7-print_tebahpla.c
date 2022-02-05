@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 'z'; i >= 'a'; i+1)
+	for (i = ' z'; i >= 'a'; i--)
 	{
 		printf("%c", i);
 	}
