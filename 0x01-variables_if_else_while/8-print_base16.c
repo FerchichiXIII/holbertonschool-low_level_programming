@@ -5,12 +5,25 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-	int i;
 
-	for (i = '0'; i >= 'f'; i--)
+{
+	char a;
+
+	for (a = 'a'; a <= 'f'; a++)
+
 	{
-		printf("%c", i);
+
+		if (a != 'e' && a != 'q')
+			putchar(a);
+	}
+	{
+		char n = '0';
+
+		while (n <= '9')
+		{
+			putchar(n);
+			n = n + 1;
+		}
 	}
 	putchar('\n');
 	return (0);
