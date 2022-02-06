@@ -5,26 +5,21 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-	char a;
+	char n = '0';
 
-	for (a = 'a'; a <= 'f'; a++)
-
+	while (n <= '9')
 	{
-
-		if (a != 'e' && a != 'q')
-			putchar(a);
+		putchar(n);
+		n = n + 1;
 	}
+	char a = 'a';
+	while (a <= 'f')
 	{
-		char n = '0';
-
-		while (n <= '9')
-		{
-			putchar(n);
-			n = n + 1;
-		}
+		putchar(a);
+		a = a + 1;
 	}
+
 	putchar('\n');
 	return (0);
 }
