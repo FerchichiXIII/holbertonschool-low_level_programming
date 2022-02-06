@@ -4,22 +4,25 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-
+	{
 		int n;
 
-		for (n = '0'; n <= '9'; n--)
+		for (n = 0; n <= 9; ++n)
 		{
-			printf("%c", n);
+			printf("%d ", n);
 		}
-		{
-			int i;
+	}
+	{
+		int a;
 
-			for (i = 'a'; i >= 'f'; i--)
-			{
-				printf("%c", i);
-			}
-			putchar("\n");
-			return (0);
+		for (a = 'a'; a <= 'f'; ++a)
+		{
+			printf("%d ", a);
 		}
+		putchar('\n');
+		return (0);
+	}
+}
