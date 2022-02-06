@@ -7,22 +7,14 @@
 
 int main(void)
 {
-	{
-		int n;
+	int n;
+	char a;
 
-		for (n = 0; n <= 9; ++n)
-		{
-			printf("%d ", n);
-		}
-	}
-	{
-		int a;
+	for (n = 0; n <= 9; n++)
+		putchar(n);
 
-		for (a = 'a'; a <= 'f'; ++a)
-		{
-			printf("%d ", a);
-		}
-		putchar('\n');
-		return (0);
-	}
+	for (a = 'a'; a <= 'f'; a++)
+		putchar(a);
+	putchar('\n');
+	return (0);
 }
