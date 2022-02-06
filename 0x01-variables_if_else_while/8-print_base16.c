@@ -4,22 +4,19 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+
+int main()
 {
-	char n = '0';
-
-	while (n <= '9')
+	for (int x = '0'; x <= '9'; x++)
 	{
-		putchar(n);
-		n = n + 1;
+		x = tolower(x);
+		putchar(x);
 	}
-	char a = 'a';
-	while (a <= 'f')
+	for (int x = 'a'; x <= 'f'; x++)
 	{
-		putchar(a);
-		a = a + 1;
+		x = tolower(x);
+		putchar(x);
 	}
-
 	putchar('\n');
-	return (0);
+	return 0;
 }
