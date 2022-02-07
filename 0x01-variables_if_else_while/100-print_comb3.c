@@ -6,17 +6,24 @@
  */
 int main(void)
 {
-	int n;
+	int a, b;
 
-	for (n = 0; n <= 89; ++n)
+	for (a = '0'; a < '9'; a++)
+
+		;
+	for (b = '1'; b <= '9'; b++)
 
 	{
-		putchar('0' + (n % 10));
-		if (n == 10)
-			continue;
-		putchar(',');
-		putchar(' ');
+		if (a < b)
+		{
+			putchar(a);
+			putchar(b);
+			if (a == '8' && b == '9')
+				continue;
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
-	return (0);
+	return ('0');
 }
