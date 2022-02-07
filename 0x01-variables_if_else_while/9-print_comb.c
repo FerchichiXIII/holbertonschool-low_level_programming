@@ -6,16 +6,13 @@
  */
 int main(void)
 {
-	int i, N;
+	int n;
 
-	scanf("%d", &N);
+	for (n = 0; n < 10; n++)
 
-	for (i = 1; i <= N; i++)
 	{
-		printf("%d", i);
-
-		if (i != N)
-			printf(", ");
+		putchar((n % 10) + '0');
 	}
-	return 0;
+	putchar('\n');
+	return (0);
 }
