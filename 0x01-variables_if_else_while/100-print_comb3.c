@@ -12,7 +12,7 @@ int main(void)
 
 	{
 		putchar((n % 90) + '0');
-		if (n == 89)
+		if (n == 10)
 			continue;
 		putchar(',');
 		putchar(' ');
