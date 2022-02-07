@@ -6,32 +6,27 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int a, b;
 
-	for (a = '0'; a < '9'; a++)
+	for (a = 00; a < 98; a++)
 
 	{
 
-		for (b = '0'; b <= '9'; b++)
+		for (b = 01; b <= 99; b++)
 
 		{
-			for (c = '0'; c <= '8'; c++)
+			if (a < b)
 			{
-				for (d = '0'; d <= '9'; d++)
-				{
-				}
 
-				if (a < b)
-				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
-					putchar(d);
-					if (a == '9' && b == '9' && c == '8' && d == '9')
-						continue;
-					putchar(',');
-					putchar(' ');
-				}
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
+			putchar(' ');
+			putchar((b / 10) + '0');
+			putchar((b % 10) + '0');
+			if (a == 98 && b == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 			}
 		}
 	}
