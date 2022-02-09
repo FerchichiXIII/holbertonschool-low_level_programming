@@ -2,7 +2,7 @@
 /**
  * int - prints the last digit of a number
  * @n: The character to print
- *
+ * @y: The character to print
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
