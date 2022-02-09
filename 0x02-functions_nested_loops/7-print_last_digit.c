@@ -7,7 +7,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int print_last_digit(int n)
+int print_last_digit(int n, int y)
 
 {
 
