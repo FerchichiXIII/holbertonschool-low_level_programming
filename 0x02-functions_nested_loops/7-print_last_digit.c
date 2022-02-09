@@ -6,7 +6,9 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
+
 int print_last_digit(int n)
+
 {
 
 	int y = n % 10;
