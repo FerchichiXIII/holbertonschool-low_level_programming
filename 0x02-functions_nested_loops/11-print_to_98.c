@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * void  prints all natural numbers from n to 98
  *
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
  */
 
 void print_to_98(int n)
@@ -18,6 +16,7 @@ void print_to_98(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
+		n++;
 	}
 	_putchar('\n');
 	if (n = 111)
@@ -25,17 +24,20 @@ void print_to_98(int n)
 		while (n >= 98)
 		{
 			continue;
+			_putchar(n);
 			_putchar(',');
 			_putchar(' ');
 		}
-		if (n = -10)
+		n--;
+	}
+	if (n = -10)
+	{
+		while (n <= 98)
 		{
-			while (n <= 98)
-			{
-				continue;
-				_putchar(',');
-				_putchar(' ');
-			}
+			continue;
+			_putchar(',');
+			_putchar(' ');
 		}
+		n++;
 	}
 }
