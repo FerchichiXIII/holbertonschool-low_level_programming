@@ -2,7 +2,7 @@
 /**
  *_strlen - returns the length of a string.
  *
- *@s: strlen to n
+ *@s: strlen to n.
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
