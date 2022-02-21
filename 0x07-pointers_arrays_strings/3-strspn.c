@@ -7,19 +7,12 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	size_t n;
-	const char *p;
-
-	for (n = 1; *s; accept++, n++)
-
-	{
-
-		for (p = accept; *p && *p != *s; p++)
-
-			;
-		if (!*p)
-			break;
-	}
-
-	return (n);
+    unsigned int len =0;
+    if((s == NULL) || (accept == NULL))
+        return len;
+    while(*s && strchr(accept,*s++))
+    {
+        len++;
+    }
+    return len;
 }
