@@ -10,16 +10,18 @@ char *str_concat(char *s1, char *s2)
 
 {
 
-	char *rtn = malloc(strlen(s1) + strlen(s2) + 1);
-	int p, q = 0;
+	char *str = NULL;
+	size_t len1 = 0;
+	size_t len2 = 0;
 
-
-	for (p = 0; (rtn[q] = s1[p]) != '\0'; ++p, ++q)
-
-	{
-	}
-	for (p = 0; (rtn[q] = s2[p]) != '\0'; ++p, ++q)
-	{
-	}
-	return (rtn);
-}
+	if (s1)
+		len1 = strlen(s2);
+	if (s2)
+		len2 = strlen(s2);
+	if (malloc(sizeof(char) * (len1 + len2 + 1)))
+		return (NULL);
+	if (s1)
+		memcpy(str, s1, len1);
+	if (s2)
+		memcpy(str + len1, s2, len2);
+	return (str);
