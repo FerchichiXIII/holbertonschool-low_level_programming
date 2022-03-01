@@ -12,6 +12,9 @@ char *str_concat(char *s1, char *s2)
 
 	char *rtn = malloc(strlen(s1) + strlen(s2) + 1);
 	int p, q = 0;
+	if (rtn == NULL)
+    {
+        return(NULL);
 
 	for (p = 0; (rtn[q] = s1[p]) != '\0'; ++p, ++q)
 
