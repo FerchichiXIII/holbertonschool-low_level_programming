@@ -25,3 +25,4 @@ char *str_concat(char *s1, char *s2)
 	if (s2)
 		memcpy(str + len1, s2, len2);
 	return (str);
+}
