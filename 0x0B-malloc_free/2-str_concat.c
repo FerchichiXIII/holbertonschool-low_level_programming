@@ -7,15 +7,17 @@
  * Return: trn
  **/
 char *str_concat(char *s1, char *s2)
+
 {
-	char *p, *q, *rtn;
 
-	rtn = q = malloc(strlen(s1) + strlen(s2) + 1);
+	char *rtn = malloc(strlen(s1) + strlen(s2) + 1);
+	int p, q = 0;
 
-	for (p = s1; (*q = *p) != '\0'; ++p, ++q)
+	for (p = 0; (rtn[q] = s1[p]) != '\0'; ++p, ++q)
+
 	{
 	}
-	for (p = s2; (*q = *p) != '\0'; ++p, ++q)
+	for (p = 0; (rtn[q] = s2[p]) != '\0'; ++p, ++q)
 	{
 	}
 	return (rtn);
