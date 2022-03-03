@@ -8,14 +8,18 @@
  */
 
 void *malloc_checked(unsigned int b)
+
 {
+
 	int *ptr = (int *)malloc(b * sizeof(int));
+
 	if (ptr == NULL)
+
 	{
 
 		exit(98);
 		return (NULL);
-		free (ptr);
+		free(ptr);
 	}
 	else
 		return (ptr);
