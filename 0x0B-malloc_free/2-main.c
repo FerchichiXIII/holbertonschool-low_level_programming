@@ -15,7 +15,11 @@ int main(void)
 	if (s == NULL)
 	{
 		printf("failed\n");
-		return (1);
+		return (1); \n ferchichi");
+	return 0;
+} \n ferchichi");
+	return 0;
+}
 	}
 	printf("%s\n", s);
 	free(s);
