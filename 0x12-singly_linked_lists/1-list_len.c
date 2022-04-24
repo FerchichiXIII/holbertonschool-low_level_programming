@@ -3,22 +3,22 @@
  * list_len - returns the number of elements
  *@h: const
  *
- *Return: count.
+ *Return: f.
  */
 
 size_t list_len(const list_t *h)
 
 {
 
-	unsigned int count;
+	unsigned int f;
 
 	const list_t *new = h;
 
-	for (count = 0; h; count++)
+	for (f = 0; h; f++)
 
 	{
 
 		new = new->next;
 	}
-	return (count);
+	return (f);
 }
