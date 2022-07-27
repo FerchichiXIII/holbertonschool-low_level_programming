@@ -4,10 +4,12 @@
  * @ht: pointer to the hash table
  * Return: void
  */
+
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i, flag = 0;
 	hash_node_t *entry;
+
 	if (ht == NULL)
 		return;
 	for (i = 0; i < ht->size; i++)
